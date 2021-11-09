@@ -41,20 +41,20 @@ class _NewsFeedPageState extends State<NewsFeedPage> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Expanded(
+          Expanded( // Horizontal swipe list of news sources
             child: Container(
               padding: EdgeInsets.fromLTRB(0, 60, 0, 20),
               child: SourcesView(),
             ),
           ),
-          Container(
+          Container( // Title 'new stories'
             padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
             child: Text('News Stories', style: TextStyle(fontSize: 20,
               fontWeight: FontWeight.w800, fontFamily: 'OpenSans',
               color: Color(0xFF0A0E21),
             )),
           ),
-          Expanded(
+          Expanded( // List of news articles of chosen news source
             flex: 3,
             child: Consumer<NewsSourceModel>(
               builder: (context, newsSource, child) {

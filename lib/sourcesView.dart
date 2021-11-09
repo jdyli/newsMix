@@ -1,3 +1,5 @@
+// Horizontal swipe list of news icons
+
 import 'package:flutter/material.dart';
 import 'package:newsapp/main.dart';
 import 'package:provider/provider.dart';
